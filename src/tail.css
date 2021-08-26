@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clipped{
+    
+    clip-path: url(#myClip);
+}
+.clipp{
+    clip-path: url(#clip);
+}

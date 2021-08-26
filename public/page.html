@@ -22,14 +22,34 @@
         </ul>
     </nav>
     <main class="flex">
-        <div>
+        <div class="w-1/2">
             <ul class="text-8xl font-semibold">
                 <li>LOREM IPSUM</li>
                 <li>DOLOR SIT</li>
                 <li>AMET</li>
             </ul>
         </div>
-        <div></div>
+        <div class="w-1/2 relative ">
+
+            <div class="clipp absolute bg-green-600 w-full h-full top-0"></div>
+            <img src="./img.jpg" alt="epic background" class="clipped">
+            <svg width="0" height="0">
+                <defs>
+                  <clipPath id="myClip">
+                    <polygon points="226,0 0,306 226,613 410,613 184,306 410,0"/>
+                    <polygon points="351,251 455,251 529,368 455,496 351,496 424,368"/>
+                  </clipPath>
+                </defs>
+            </svg>
+            <svg width="0" height="0">
+                <defs>
+                  <clipPath id="clip">
+                    <polygon points="276,20 50,326 276,633 460,633 234,326 460,20"/>
+                    <polygon points="381,271 485,271 559,388 485,516 381,516 454,388"/>
+                  </clipPath>
+                </defs>
+            </svg>
+        </div>
     </main>
     <footer>
 
