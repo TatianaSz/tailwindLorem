@@ -9,3 +9,12 @@
 .clipp{
     clip-path: url(#clip);
 }
+.after::after{
+content:'';
+width:8px;
+height:90%;
+background-color:#059669;
+position:absolute;
+right:-25px;
+bottom:5%;
+}
