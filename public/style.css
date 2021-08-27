@@ -215,7 +215,8 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 
-button {
+button,
+[type='button'] {
   -webkit-appearance: button;
 }
 
@@ -539,6 +540,10 @@ video {
  * Ensure the default browser behavior of the `hidden` attribute.
  */
 
+[hidden] {
+  display: none;
+}
+
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -556,6 +561,14 @@ video {
   top: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -568,12 +581,20 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -588,8 +609,20 @@ video {
   display: table;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-24 {
@@ -604,12 +637,20 @@ video {
   width: 1.5rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.max-w-160 {
+  max-width: 613px;
 }
 
 @-webkit-keyframes spin {
@@ -706,8 +747,17 @@ video {
   gap: 2rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .bg-green-600 {
@@ -728,6 +778,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-lg {
@@ -824,6 +878,10 @@ video {
   bottom:5%;
 }
 
+#btnControl:checked + label > ul{
+  display:block;
+}
+
 @media (min-width: 640px) {
 }
 
@@ -837,4 +895,59 @@ video {
 }
 
 @media (min-width: 1536px) {
+}
+
+@media (max-width: 1100px) {
+  .med\:absolute {
+    position: absolute;
+  }
+
+  .med\:top-16 {
+    top: 4rem;
+  }
+
+  .med\:right-0 {
+    right: 0px;
+  }
+
+  .med\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .med\:block {
+    display: block;
+  }
+
+  .med\:hidden {
+    display: none;
+  }
+
+  .med\:w-full {
+    width: 100%;
+  }
+
+  .med\:max-w-160 {
+    max-width: 613px;
+  }
+
+  .med\:flex-col {
+    flex-direction: column;
+  }
+
+  .med\:flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .med\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .med\:text-center {
+    text-align: center;
+  }
+
+  .med\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }

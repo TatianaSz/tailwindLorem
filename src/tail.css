@@ -18,3 +18,7 @@ position:absolute;
 right:-25px;
 bottom:5%;
 }
+#btnControl:checked + label > ul{
+   display:block;
+
+}

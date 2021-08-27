@@ -8,24 +8,33 @@
     <title>Lorem</title>
 </head>
 <body>
-    <nav class="flex flex-row justify-between content-center items-center w-full text-2xl h-24 shadow-md">
+    <nav class="flex flex-row justify-between content-center items-center w-full relative text-2xl h-24 shadow-md">
         <div >
             <div class="ml-8 text-3xl font-semibold flex content-center items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
               </svg>LOGO</div>
         </div>
-        <ul class="flex flex-row justify-center  gap-8">
-            <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300">Lorem</li>
-            <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300">Ipsum</li>
-            <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300">Dolor sit</li>
-            <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300">Phasellus</li>
-            <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300" >Pellentesque</li>
-            <li class="text-green-500 hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300">Curabitur</li>
-        </ul>
+        
+        <div class="h-12">
+            <input class="hidden" type="checkbox" id="btnControl"/>
+            <label class="mr-4 cursor-pointer " for="btnControl"><svg xmlns="http://www.w3.org/2000/svg" class="mt-2 mr-4 h-8 w-8  hidden med:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <ul class="flex z-10 bg-white rounded flex-row  content-center justify-center gap-8 med:flex-col med:hidden med:absolute med:top-16 med:right-0">
+                <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300"><a href="#">Lorem</a></li>
+                <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300"><a href="#">Ipsum</a></li>
+                <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300"><a href="#">Dolor sit</a></li>
+                <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300"><a href="#">Phasellus</a></li>
+                <li class="cursor-pointer hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300" ><a href="#">Pellentesque</a></li>
+                <li class="text-green-500 hover:bg-green-600 hover:text-white px-4 py-2 rounded transition duration-300"><a href="#">Curabitur</a></li>
+            </ul>
+            </label>
+              
+        </div>
     </nav>
-    <main class="flex">
-        <div class="w-1/2 content-center items-center ml-8 mt-20">
-            <ul class="text-8xl font-semibold mb-4 ">
+    <main class="flex  items-center content-center med:flex-col-reverse">
+        <div class="w-1/2  pl-8 mt-20 med:w-full med:mt-0 med:text-center med:pr-8">
+            <ul class="text-8xl font-semibold mb-4 med:text-6xl ">
                 <li>LOREM IPSUM</li>
                 <li>DOLOR SIT</li>
                 <li class="after relative inline-block">AMET</li>
@@ -33,10 +42,9 @@
             <p class="mb-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat viverra dui, sed tincidunt est pulvinar at. Suspendisse non metus facilisis, finibus turpis at, pretium massa.</p>
             <a class="text-white bg-green-600 px-4 py-2 rounded cursor-pointer">ACTION</a>
         </div>
-        <div class="w-1/2 relative mt-6">
-
+        <div class="w-1/2 relative mt-6 med:w-full overflow-hidden med:max-w-160">
             <div class="clipp absolute bg-green-600 w-full h-full top-0"></div>
-            <img src="./img.jpg" alt="epic background" class="clipped">
+            <img src="./img.jpg" alt="epic background" class=" clipped block max-w-160">
             <svg width="0" height="0">
                 <defs>
                   <clipPath id="myClip">
